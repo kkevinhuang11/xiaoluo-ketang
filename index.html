@@ -527,7 +527,7 @@ function scrSetup(st) {
   <div class="card"><h4>题量</h4><div class="stepper">${[[5, '5 题'], [10, '10 题'], ['all', '全部']].map(([v, l]) => `<div class="${st.setup.n === v ? 'on' : ''}" onclick="act('setN','${v}')">${l}</div>`).join('')}</div>
     <div class="note">正式版按所选范围随机抽题，题型比例与原题库一致。</div></div>
   <div class="card"><div class="lrow" style="border:none;padding:0"><b style="font-size:14px">显示用时</b><div class="switch ${st.setup.timer ? 'on' : ''}" onclick="act('setTimer')"></div></div><div class="note">只显示用时，不限时。</div></div>
-  <div class="card" style="background:var(--warn-l);border-color:#F5D9A8"><div style="font-size:12px;color:var(--warn);line-height:1.7">自测卷交卷后统一判分。结果只保存在本机，<b>不上传、不作为考核依据</b>。实名、限时、成绩留存的正式测评放在二期。</div></div>`;
+  <div class="card" style="background:var(--warn-l);border-color:#F5D9A8"><div style="font-size:12px;color:var(--warn);line-height:1.7">自测卷交卷后统一判分。结果只保存在本机，<b>不上传、不作为考核依据</b>。按人记录成绩在正式版（UMU）上实现。</div></div>`;
 }
 function ring(pct) {
   const C = 2 * Math.PI * 56;
